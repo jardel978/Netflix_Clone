@@ -1,0 +1,64 @@
+@mixin icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+    opacity: 0;
+    z-index: 99;
+}
+
+
+.movieRow {
+    margin-bottom: 30px;
+
+    h2 {
+        margin: 0 0 0 30px;
+    }
+
+}
+
+.movieRow__list-area {
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+
+.movieRow__list {
+    transition: ease-in-out 0.6;
+}
+
+.movieRow__list-item {
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        transform: scale(0.93);
+
+        &:hover {
+            transform: scale(1);
+            transition: ease-in-out 0.2s;
+        }
+    }
+}
+
+.movieRow__icon-left {
+    @include icons;
+    left: 0;
+}
+
+.movieRow__icon-right {
+    @include icons;
+    right: 0;
+}
+
+.movieRow:hover .movieRow__icon-left,
+.movieRow:hover .movieRow__icon-right {
+    transition: ease 0.5;
+    opacity: 1;
+}

@@ -1,0 +1,123 @@
+@mixin display-item {
+    display: inline-block;
+    margin-right: 15px;  
+} 
+
+.section__feature {
+    height: 100vh;
+}
+
+.feature-vertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, rgb(17, 17, 17) 5%, transparent 95%);
+}
+
+.feature-horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 150px;
+    padding-top: 70px;
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, rgb(17, 17, 17) 7%, transparent 93%);
+}
+
+.feature__item-name {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.feature__item-info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.feature__item-points {
+    @include display-item;
+    color: #46d369;
+}
+
+.feature__item-year {
+    @include display-item;
+}
+
+.feature__item-seasons {
+    @include display-item;
+}
+
+.feature__item-description {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+}
+
+.feature__item-buttons {
+    margin-top: 15px;
+
+    a { 
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 12px 25px;
+        text-decoration: none;
+        margin-right: 10px;
+        border-radius: 5px;
+
+        &:hover {
+            opacity: 0.7;
+            transition: ease-in-out 0.2;
+            cursor: pointer;
+        }
+    }
+}
+
+.feature__item-buttons-one {
+    background-color: #fff;
+    color: #000;
+}
+
+.feature__item-buttons-two {
+    background-color: #333;
+    color: #fff;
+}
+
+.feature__item-genres {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+}
+
+@media (max-width: 760px) {
+    .section__feature {
+        height: 90vh;
+    }
+
+    .feature__item-name {
+        font-size: 40px;
+    }
+
+    .feature__item-info {
+        font-size: 16px;
+    }
+
+    .feature__item-description {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+
+    .feature__item-buttons {
+        a {
+            font-size: 16px;
+        }
+    }
+    
+    .feature__item-genres {
+        font-size: 14px;
+    }
+}

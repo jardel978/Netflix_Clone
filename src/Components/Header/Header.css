@@ -1,0 +1,39 @@
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+  background: transparent;
+  -webkit-transition: ease-in-out 0.5;
+  transition: ease-in-out 0.5;
+}
+
+header img {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.header-black {
+  background-color: #141414;
+}
+
+.header-logo {
+  height: 60px;
+}
+
+.header-user {
+  height: 40px;
+}
+/*# sourceMappingURL=Header.css.map */

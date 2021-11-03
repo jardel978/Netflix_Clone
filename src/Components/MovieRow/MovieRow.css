@@ -1,0 +1,86 @@
+.movieRow {
+  margin-bottom: 30px;
+}
+
+.movieRow h2 {
+  margin: 0 0 0 30px;
+}
+
+.movieRow__list-area {
+  overflow-x: hidden;
+  padding-left: 30px;
+}
+
+.movieRow__list {
+  -webkit-transition: ease-in-out 0.6;
+  transition: ease-in-out 0.6;
+}
+
+.movieRow__list-item {
+  display: inline-block;
+  width: 150px;
+  cursor: pointer;
+}
+
+.movieRow__list-item img {
+  width: 100%;
+  -webkit-transform: scale(0.93);
+          transform: scale(0.93);
+}
+
+.movieRow__list-item img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.movieRow__icon-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: absolute;
+  width: 40px;
+  height: 225px;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  opacity: 0;
+  z-index: 99;
+  left: 0;
+}
+
+.movieRow__icon-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: absolute;
+  width: 40px;
+  height: 225px;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  opacity: 0;
+  z-index: 99;
+  right: 0;
+}
+
+.movieRow:hover .movieRow__icon-left,
+.movieRow:hover .movieRow__icon-right {
+  -webkit-transition: ease 0.5;
+  transition: ease 0.5;
+  opacity: 1;
+}
+/*# sourceMappingURL=MovieRow.css.map */
